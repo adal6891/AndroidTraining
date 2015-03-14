@@ -1,4 +1,4 @@
-package com.example.administrator.traningapp;
+package com.example.administrator.trainingapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

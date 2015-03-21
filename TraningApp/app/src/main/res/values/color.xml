@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_orange">#fa0</color>
+    <color name="actionbar_text">#f00</color>
+    <color name="tab_selected">#0ff</color>
+    <color name="tab_unselected">#0f0</color>
+    <color name="tab_selected_pressed">#0af</color>
+    <color name="tab_unselected_pressed">#0aa</color>
+
+    <color name="tab_selected_focused">#faf</color>
+    <color name="tab_unselected_focused">#faa</color>
+</resources>

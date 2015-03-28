@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
     public  final static String EXTRA_MESSAGE = "com.example.administrator.trainingapp.MESSAGE";
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +31,44 @@ public class MainActivity extends ActionBarActivity {
                 actionBar.hide();
             }
         });
+        Log.d(TAG, "OnCreate");
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "OnStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "OnResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "OnPause");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "OnRestart");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "OnStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "OnDestroy");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
